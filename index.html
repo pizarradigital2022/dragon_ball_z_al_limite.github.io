@@ -103,7 +103,7 @@ button:hover{background:#ff6600;}
 <h1>🔥 Breakout DBZ: ¡Dragon Ball Z al límite! 🔥</h1>
 <p>Los villanos han reunido las Bolas de Dragón. Solo resolviendo los desafíos matemáticos podrás detenerlos.</p>
 
-<img src="./resources/IMAGEN_INTRO.png" width="400">
+<img src="./resources/IMAGEN_INTRO.png" width="400" alt="Introducción">
 
 <br>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hXeVpYrB2xA?si=XXeaKlLO2NVskckC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -124,7 +124,7 @@ button:hover{background:#ff6600;}
 <h1>❄️ Prueba 1 — Freezer: El hielo del infinito</h1>
 <p>Freezer ha congelado la primera Bola de Dragón dentro de un bloque de hielo matemático imposible de romper con fuerza bruta. Solo quienes comprendan el equilibrio entre raíces y límites podrán derretir su prisión. El límite que protege la esfera representa la estabilidad del universo frente al caos. Si lográis simplificar la expresión y hallar su valor real, el hielo se resquebrajará y la primera Bola quedará libre. El tiempo corre, y el frío de Freezer avanza.</p>
 <div class="math">\[ \lim_{x \to 4} \frac{\sqrt{x}-2}{\sqrt{x+5}-3} \]</div>
-<img src="./resources/IMAGEN1.png" width="350">
+<img src="./resources/IMAGEN1.png" width="350" alt="Freezer">
 <br/>
 <button onclick="showHint('h1')">Pista</button>
 <div id="h1" class="hint">Racionaliza numerador y denominador.</div>
@@ -146,7 +146,7 @@ kx - 3 & x \ge 2
 \]
 </div>
 <p>Continuidad en \(x=2\)</p>
-<img src="./resources/IMAGEN2.png" width="350">
+<img src="./resources/IMAGEN2.png" width="350" alt="Célula">
 <br/>
 <button onclick="showHint('h2')">Pista</button>
 <div id="h2" class="hint">Iguala los límites laterales.</div>
@@ -160,7 +160,7 @@ kx - 3 & x \ge 2
 <p>Majin Buu (el Monstruo Buu, o Bubú) ha deformado el espacio matemático, estirando el infinito hasta volverlo impredecible. La tercera Bola de Dragón flota en ese caos, protegida por un límite cuando 𝑥x tiende al infinito. Solo quienes sepan analizar el comportamiento dominante podrán restaurar el orden. Si lográis descubrir qué término gobierna el infinito, el caos se disipará y la esfera regresará a la realidad.</p>
 
 <div class="math">\[ \lim_{x \to \infty} \frac{3x^2-x+1}{x^2+4x-5} \]</div>
-<img src="./resources/IMAGEN3.png" width="350">
+<img src="./resources/IMAGEN3.png" width="350" alt="Monstruo Bu">
 <br/>
 <button onclick="showHint('h3')">Pista</button>
 <div id="h3" class="hint">Divide entre la mayor potencia de x.</div>
@@ -173,7 +173,7 @@ kx - 3 & x \ge 2
 <h1>⚡ Prueba 4 — Vegeta oscuro: El orgullo Saiyan</h1>
 <p>Vegeta ha vuelto a cambiar de bando, dominado por su orgullo, protege la cuarta Bola con un desafío de precisión absoluta. La expresión parece imposible: una indeterminación que solo puede resolverse con inteligencia y control. Racionalizad, simplificad y demostrad que la mente puede superar a la fuerza. Si falláis, su poder crecerá; si acertáis, reconocerá vuestra valía y permitirá que la Bola de Dragón se una a las demás.</p>
 <div class="math">\[ \lim_{x \to 1} \frac{\sqrt{x+3}-2}{x-1} \]</div>
-<img src="./resources/IMAGEN4.png" width="350">
+<img src="./resources/IMAGEN4.png" width="350" alt="Vegeta">
 <br/>
 <button onclick="showHint('h4')">Pista</button>
 <div id="h4" class="hint">Multiplica por el conjugado.</div>
@@ -191,25 +191,26 @@ kx - 3 & x \ge 2
 <br/>Prueba 3 — Bubu: Utiliza directamente el valor numérico del límite sin signo.
 <br/>Prueba 4 — Vegeta: Convierte el resultado del límite a decimal y toma las dos primeras cifras decimales para obtener tu número.</p>
 <br/>
-<img src="./resources/IMAGEN_CANDADO.png" width="350">
+<img src="./resources/IMAGEN_CANDADO.png" width="350" alt="Candado">
 <br/>
   
 <input id="password" placeholder="Frezer-Cell-Bubu-Vegeta" class="candado">
+<br>
 <button onclick="checkPassword()">Desbloquear</button>
 </div>
 
 <!-- ÉXITO -->
 <div id="success" class="screen aura">
 <h1>🐉 ¡Ganásteis! 🐉</h1>
+<img src="./resources/IMAGEN_EXITO.png" width="400" alt="Ganasteis"/>
 <p>Habéis salvado la Tierra y recuperado las bolas de dragón. ¡Podéis invocar a Shenron y solicitar vuestra calificación positiva!</p>
-<img src="./resources/IMAGEN_EXITO.png" width="300">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QN8B6oMrzDU?si=GliOmkguYxjsvmcY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 <!-- FRACASO -->
 <div id="fail" class="screen">
 <h1>💥 ¡Los villanos ganaron! 💥</h1>
-<img src="./resources/IMAGEN_FRACASO.png" width="300">
+<img src="./resources/IMAGEN_FRACASO.png" width="400" alt="Perdisteis">
 <p>Habéis perdido y los malvados han invocado a Shenron.</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EuYpW2BUHTg?si=f4xLQG1Zd9K1bP3X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <br>

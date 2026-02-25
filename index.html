@@ -74,7 +74,7 @@ button:hover{background:#ff6600;}
     font-size:14px;
     transition: all 0.5s ease;
 }
-#candado {
+.candado {
   width: 350px;        /* ancho */
   height: 60px;        /* alto */
   font-size: 24px;     /* tamaño del texto */
@@ -114,9 +114,9 @@ button:hover{background:#ff6600;}
 <button onclick="startGame(60)">Modo 60 min</button>
 <button onclick="startGame(90)">Modo 90 min</button>
 <hr>
-<p>Si quieres habilitar el panel del profesor introduce la contraseña: </p>  
-<p>Autor: Joaquín Candañedo.<br><a href="https://creativecommons.org/licenses/by-sa/4.0/"><img src="./resources/CC_BY_SA.png" alt="Creative Commons Reconocimiento - Compartir Igual"></a></p>
-  
+<p>Si quieres habilitar el panel del profesor introduce la contraseña: <input type="password" id="accesoProfe" placeholder="Acceso profesor"></p>  
+<hr>
+<p>Autor: Joaquín Candañedo.<br><a href="https://creativecommons.org/licenses/by-sa/4.0/"><img src="./resources/CC_BY_SA.png" alt="Creative Commons Reconocimiento - Compartir Igual"></a></p>  
 </div>
 
 <!-- PRUEBA 1 -->
@@ -194,7 +194,7 @@ kx - 3 & x \ge 2
 <img src="./resources/IMAGEN_CANDADO.png" width="350">
 <br/>
   
-<input id="password" placeholder="Frezer-Cell-Bubu-Vegeta">
+<input id="password" placeholder="Frezer-Cell-Bubu-Vegeta" class="candado">
 <button onclick="checkPassword()">Desbloquear</button>
 </div>
 
